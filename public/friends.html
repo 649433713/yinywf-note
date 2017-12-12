@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            padding-top: 20px;
+        }
+        /*个人中心、搜索结果页块样式*/
+        .bigBlock{
+            border: 1px solid #EEEEEE;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .bigBlock h4{
+            color: #696969;
+        }
+        .bigBlock .innerBigBlock{
+            margin-top: 70px;
+        }
+        /*分割线样式*/
+        .hr {
+            height: 2px;
+            margin: 30px 0 20px 0;
+            background: rgba(255, 255, 255, .2);
+        }
+        .bigBlock .hr{
+            height:2px;
+            margin:10px 0 20px 0;
+            background:rgba(232,232,232,.9);
+        }
+
+
+        /*个人中心列表块样式*/
+        .listBlock{
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #d5d5d5;
+            border-radius: 6px;
+        }
+        .listBlock .centerBlock{
+            margin-top: 20px;
+        }
+        .listBlock .buttonBlock{
+            margin-top: 20px;
+        }
+        /*星星好评的颜色*/
+        .redStar{
+            color: #E5322E;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs" role="tablist" id="requestTab">
+                <li role="presentation" class="active"><a href="#waited" aria-controls="waited" role="tab" data-toggle="tab">我的粉丝</a></li>
+                <li role="presentation"><a href="#ing" aria-controls="ing" role="tab" data-toggle="tab">我的关注</a></li>
+                <li role="presentation"><a href="#finished" aria-controls="finished" role="tab" data-toggle="tab">我的搜索</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active " id="waited">
+                    <div class="row listBlock">
+                        <div class="col-md-12">
+                            <div class="row bigBlock">
+                                <div class="col-md-12">
+                                    <h4>我的粉丝列表</h4>
+                                </div>
+                                <div class="hr col-md-12"></div>
+                                <div class="innerBigBlock">
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="ing">
+                    <div class="row listBlock">
+                        <div class="col-md-12">
+                            <div class="row bigBlock">
+                                <div class="col-md-12">
+                                    <h4>我的粉丝列表</h4>
+                                </div>
+                                <div class="hr col-md-12"></div>
+                                <div class="innerBigBlock">
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="finished">
+                    <div class="row listBlock">
+                        <div class="col-md-12">
+                            <div class="row bigBlock">
+                                <div class="col-md-12">
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control " placeholder="Search for..." style="width: 300px;">
+                                                <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">搜索</button>
+                                    </span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="hr col-md-12"></div>
+                                <div class="innerBigBlock">
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row listBlock">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-1 portraitBlock">
+                                                    <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="row">
+                                                        <h4>我的粉丝</h4>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                        <span class="glyphicon glyphicon-star redStar"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                                    <div class="row text-center">
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-primary goToMainPageButton">查看主页</button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button type="button" class="btn btn-danger searchFollowButton">+ 关注</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>后台用户管理</title>
+    <link href="/css/friends.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.ejs">Swell丶旖旎F</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="active"><a href="#search-username" aria-controls="search-username" role="tab" data-toggle="tab">搜索用户</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="user-state">
+                <li><a ><%if(typeof (username) !=='undefined'){%> <%='欢迎您，'+ username %> <%}else {"您好，管理员！"}%></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="search-username">
+        <div class="row listBlock">
+            <div class="col-md-12">
+                <div class="row bigBlock">
+                    <div class="col-md-12">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Search for..." style="width: 300px;">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" id="search-user-button">搜索</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hr col-md-12"></div>
+                    <div class="innerBigBlock">
+
+                        <% if (typeof (users)!=='undefined'){ users.forEach(function (t) { %>
+                        <div class="row listBlock userItem">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-1 portraitBlock">
+                                        <img src="https://cn-ali.muscache.com/im/pictures/user/9a837bb7-834d-4517-85da-11abfdad748b.jpg?aki_policy=profile_x_medium" width="58px" height="58px" style="margin-left: -16px; padding: 1px 2px 3px; border-radius: 6px">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="row">
+                                            <h4><%=t.username%></h4>
+                                            <h6>邮箱：<%=t.email%> 电话：<%=t.phone%></h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-6 buttonBlock">
+                                        <div class="row text-center">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary goToMainPageButton">查看信息</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-danger delete-user-button" userId="<%=t.userId%>">删除用户</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%})}%>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/jquery/dist/jquery.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/backScript.js"></script>
+</html>

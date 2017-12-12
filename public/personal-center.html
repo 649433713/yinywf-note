@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人中心</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/personal-center-style.css" rel="stylesheet">
+    <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/note-detail.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../views/index.html">Swell丶旖旎F</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#menu-testimonial">近期笔记</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">笔记管理 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#note-tab" data-tab="tab-note">笔记<span class="badge" >14</span></a></li>
+                        <li><a href="#note-tab" data-tab="tab-notebook">笔记本<span class="badge" >4</span></a></li>
+                        <li><a href="#note-tab" data-tab="tab-label">标签<span class="badge" >1</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">设置</a></li>
+                <li><a href="moment.html">朋友圈</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="user-state">
+                <li><a href="">您好，请登录！</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div id="menu-testimonial" class="testimonial">
+    <div class="container">
+        <h2 id="fittext2" class="title-start white">Recent notes</h2>
+        <p class="sub-title white">title and preview</p>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="item-image">
+                        <img src="images/personal-center/1st.png" class="img-circle" width="150" height="150" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <span class="text-center head-text">Jane Doe</span><br />
+                        <i class="fa fa-quote-left"></i> Gregor then turned to look out the window at the dull weather. Drops of rain.<i class="fa fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/personal-center/2nd.png" class="img-circle" width="150" height="150" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <span class="text-center head-text">Jane Doe</span><br />
+                        <i class="fa fa-quote-left"></i> Gregor then turned to look out the window at the dull weather. Drops of rain.<i class="fa fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/personal-center/3rd.png" class="img-circle" width="150" height="150" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <span class="text-center head-text">Jane Doe</span><br />
+                        <i class="fa fa-quote-left"></i> Gregor then turned to look out the window at the dull weather. Drops of rain.<i class="fa fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<hr class="feature-divider">
+
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist" id="note-tab">
+        <li class="active"><a href="#tab-notebook" role="tab" data-toggle="tab">我的笔记本</a></li>
+        <li><a href="#tab-note" role="tab" data-toggle="tab">我的笔记</a></li>
+        <li><a href="#tab-label" role="tab" data-toggle="tab">我的标签</a></li>
+
+    </ul>
+
+    <div class="tab-content" role="main">
+        <div class="container summary tab-pane active" id="tab-notebook">
+            <div class="page-title">
+                <div class="title_left">
+                    <h3>My NoteBooks<small> Get you started</small> </h3>
+                </div>
+
+                <div class="title_right">
+                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>notebook list<small>order by time</small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#add-notebook-modal" role="button"><i class="fa fa-plus"></i></a>
+                                </li>
+                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+
+                            <div class="row">
+
+                                <div class="col-md-55">
+                                    <div class="thumbnail">
+                                        <div class="image view view-first">
+                                            <img style="width: 100%; display: block;" src="images/personal-center/notebook.jpg" alt="image" />
+                                            <div class="mask">
+                                                <p>Your Text</p>
+                                                <div class="tools tools-bottom">
+                                                    <a href="#"><i class="fa fa-link"></i></a>
+                                                    <a href="#" data-toggle="modal" data-target="#alter-notebook-modal" role="button"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <p>Snow and Ice Incoming for the South</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-55">
+                                    <div class="thumbnail">
+                                        <div class="image view view-first">
+                                            <img style="width: 100%; display: block;" src="images/personal-center/notebook.jpg" alt="image" />
+                                            <div class="mask">
+                                                <p>Your Text</p>
+                                                <div class="tools tools-bottom">
+                                                    <a href="#"><i class="fa fa-link"></i></a>
+                                                    <a href="#" data-toggle="modal" data-target="#alter-notebook-modal" role="button"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <p>Snow and Ice Incoming for the South</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-55">
+                                    <div class="thumbnail">
+                                        <div class="image view view-first">
+                                            <img style="width: 100%; display: block;" src="images/personal-center/notebook.jpg" alt="image" />
+                                            <div class="mask">
+                                                <p>Your Text</p>
+                                                <div class="tools tools-bottom">
+                                                    <a href="#"><i class="fa fa-link"></i></a>
+                                                    <a href="#" data-toggle="modal" data-target="#alter-notebook-modal" role="button"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <p>Snow and Ice Incoming for the South</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container summary tab-pane" id="tab-note">
+            <div class="page-title">
+                <div class="title_left">
+                    <h3>My Notes <small>Get you started</small></h3>
+                </div>
+
+                <div class="title_right">
+                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>note list<small>order by time</small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">创建新笔记</a>
+                                        </li>
+                                        <li><a href="#">添加到笔记本</a>
+                                        </li>
+                                        <li><a href="#" data-toggle="modal" data-target="#add-label-for-note-modal" role="button">添加标签</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <div class="row">
+                                <div class="col-sm-3 mail_list_column">
+                                    <button id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</button>
+                                    <a href="#">
+                                        <div class="mail_list">
+                                            <div class="left">
+                                                <i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+                                            </div>
+                                            <div class="right">
+                                                <h3>Dennis Mugo <small>3.00 PM</small></h3>
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="mail_list">
+                                            <div class="left">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="right">
+                                                <h3>Jane Nobert <small>4.09 PM</small></h3>
+                                                <p><span class="badge">To</span> Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="mail_list">
+                                            <div class="left">
+                                                <i class="fa fa-circle-o"></i><i class="fa fa-paperclip"></i>
+                                            </div>
+                                            <div class="right">
+                                                <h3>Musimbi Anne <small>4.09 PM</small></h3>
+                                                <p><span class="badge">CC</span> Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="mail_list">
+                                            <div class="left">
+                                                <i class="fa fa-paperclip"></i>
+                                            </div>
+                                            <div class="right">
+                                                <h3>Jon Dibbs <small>4.09 PM</small></h3>
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- /MAIL LIST -->
+
+                                <!-- CONTENT MAIL -->
+                                <div class="col-sm-9 mail_view">
+                                    <div class="inbox-body">
+                                        <div class="mail_heading row">
+                                            <div class="col-md-8">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-sm btn-primary" type="button"><i class="fa fa-save"></i> 保存</button>
+
+                                                    <button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward" title="分享"><i class="fa fa-share-square-o"></i></button>
+                                                    <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print" title="打印"><i class="fa fa-print"></i></button>
+                                                    <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash" title="删除"><i class="fa fa-trash-o"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <p class="date"> 8:02 PM 12 FEB 2014</p>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h3> Title <span class="badge">这是一个label</span></h3>
+                                                <div class="title_left">
+                                                    <div class="col-xs-12 form-group pull-left top_search">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="这是一个标题">
+                                                            <span class="input-group-btn">
+                                                              <button class="btn btn-default" type="button">Save</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="note-detail">
+                                            <label for="TextArea1"></label>
+                                            <textarea id="TextArea1" cols="20" rows="2" class="ckeditor"></textarea>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /CONTENT MAIL -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /note content -->
+        <!-- label content-->
+        <div class="container summary tab-pane" id="tab-label">
+            <div class="page-title">
+                <div class="title_left">
+                    <h3>My Labels</h3>
+                </div>
+
+                <div class="title_right">
+                    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Label List<small>different labels to sign notes</small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                                <li><a href="#" role="button"><i class="fa fa-plus"></i></a>
+                                </li>
+                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <div class="bs-label-section">
+
+                                <div class="col-md-55">
+                                    <div class="thumbnail">
+                                        <div class="image view view-first">
+                                            <img style="width: 100%; display: block;" src="images/personal-center/label.png" alt="image" />
+                                            <div class="mask no-caption">
+                                                <div class="tools tools-bottom">
+                                                    <a href="#"><i class="fa fa-link"></i></a>
+                                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <p><strong>Label Name</strong>
+                                            </p>
+                                            <p>description</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /label content-->
+    </div>
+
+
+
+</div>
+
+
+<!--新建笔记本-->
+<div class="modal fade" id="add-notebook-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">新建笔记本</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="add-notebook-name-field" class="control-label">笔记本名称</label>
+                        <input type="text" id="add-notebook-name-field" class="form-control" placeholder="请输入笔记本名称：">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">笔记本简介</label>
+                        <textarea id="add-notebook-introduction-field" class="form-control" rows="4" placeholder="这里请您写下关于笔记本的描述"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">新建笔记本</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--修改笔记本-->
+<div class="modal fade" id="alter-notebook-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">修改笔记本信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="alter-notebook-name-field" class="control-label">笔记本名称</label>
+                        <input type="text" id="alter-notebook-name-field" class="form-control" placeholder="请输入笔记本名称：">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">笔记本简介</label>
+                        <textarea id="alter-notebook-introduction-field" class="form-control" rows="4" placeholder="这里请您写下关于笔记本的描述"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">确认修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--新建标签-->
+<div class="modal fade" id="add-label-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">新建标签</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="add-notebook-name-field" class="control-label">标签名称</label>
+                        <input type="text" id="add-label-name-field" class="form-control" placeholder="请输入标签名称：">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">标签描述</label>
+                        <textarea id="add-label-introduction-field" class="form-control" rows="4" placeholder="这里请您写下关于标签的描述"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">新建标签</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--新建笔记本-->
+<div class="modal fade" id="alter-label-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">修改标签信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="add-notebook-name-field" class="control-label">标签名称</label>
+                        <input type="text" id="alter-label-name-field" class="form-control" placeholder="请输入标签名称：">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">标签描述</label>
+                        <textarea id="alter-label-introduction-field" class="form-control" rows="4" placeholder="这里请您写下关于标签的描述"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">确认修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--为笔记添加标签-->
+<div class="modal fade" id="add-label-for-note-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">修改标签信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="choose-label" class="col-sm-3 control-label">标签列表：</label>
+
+                            <select id="choose-label" name="usertype" class="selectpicker show-tick form-control" multiple data-live-search="false">
+                                <option value="0">苹果</option>
+                                <option value="1">菠萝</option>
+                                <option value="2">香蕉</option>
+                                <option value="3" selected="selected">火龙果</option>
+                                <option value="4">梨子</option>
+                                <option value="5">草莓</option>
+                                <option value="6">哈密瓜</option>
+                                <option value="7">椰子</option>
+                                <option value="8">猕猴桃</option>
+                                <option value="9">桃子</option>
+                            </select>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">确认添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="../node_modules/ckeditor/ckeditor/ckeditor.js"></script>
+<script>
+
+    $(window).on('load', function () {
+        $('#choose-label').selectpicker({
+            'selectedText': 'cat'
+        });
+    });
+    $(document).ready(function () {
+        $('#menu-nav').find('.navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $("#note-tab").find("a[href='#" + tabId + "']").tab('show');
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

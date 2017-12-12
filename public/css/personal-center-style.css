@@ -1,0 +1,86 @@
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+.badge {
+    right: 10px;
+    /*z-index: 100;*/
+}
+
+/* ---------------------------------------------------------------------- */
+/*  Testimonial
+/* ---------------------------------------------------------------------- */
+
+h2{
+    font-size: 26px;
+    line-height: 26px;
+}
+h2.title-start {
+    color: #717679;
+    font-size: 108px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
+.white{
+    color: white !important;
+}
+p.sub-title.white{
+    color: #d0d0d0 !important;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.testimonial{
+    background: url(../images/personal-center/testimonial.jpg) center center/cover no-repeat fixed;
+    margin-top: -20px;
+    padding: 120px 0;
+
+}
+.item-image{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.carousel-inner {
+    height: 315px;
+}
+.carousel-caption {
+    top: 166px;
+}
+.carousel-control.left, .carousel-control.right {
+    background: rgba(199, 240, 238, 0.14);
+}
+span.head-text{
+    font-size: 18px;
+    margin-top: -10px;
+}
+span.head-text {
+    font-size: 21px;
+    position: relative;
+    top: -15px;
+    font-family: cursive;
+    margin-bottom: 2px;
+}
+
+.fa-quote-left,.fa-quote-right{
+    font-size: 25px !important;
+
+}
+.fa-quote-left{
+    position: relative;
+    right: 10px;
+}
+.fa-quote-right{
+    position: relative;
+    left: 10px;
+}
+.fa-2x {
+    font-size: 2em;
+    position: relative;
+    top: 124px;
+}

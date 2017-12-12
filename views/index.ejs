@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swell丶旖旎F</title>
+  <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/index-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Swell丶旖旎F</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#ad-carousel">综述</a></li>
+        <li><a href="#feature">特性</a></li>
+        <li><a href="#summary-container">简述</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+        <li><a href="/moment.html" target="_blank">朋友圈</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" id="user-state">
+        <li><a href="/users">您好，请登录！</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/users" target="_blank">管理笔记</a></li>
+            <li><a href="/users" data-tab="tab-opera">我的关注</a></li>
+            <li><a href="/users" data-tab="tab-ie">我的粉丝</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#ad-carousel" data-slide-to="1"></li>
+    <li data-target="#ad-carousel" data-slide-to="2"></li>
+    <li data-target="#ad-carousel" data-slide-to="3"></li>
+    <li data-target="#ad-carousel" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active" id="carousel-inner-part1">
+      <img src="/images/part1-big.jpg" alt="1 slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>休闲办公</h1>
+
+          <p>Coffee Bar Or Anywhere，随时随地云端办公~</p>
+
+          <p><a class="btn btn-lg btn-primary" href="/users"
+                role="button" target="_blank">点我新建笔记</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="carousel-inner-part2">
+      <img src="/images/part2-big.jpg" alt="2 slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>无纸化生活</h1>
+
+          <p>身边无笔纸？现在无所谓了！</p>
+
+          <p><a class="btn btn-lg btn-primary" href="/users" target="_blank"
+                role="button">点我新建笔记</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="carousel-inner-part3">
+      <img src="/images/part3-big.PNG" alt="3 slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>更多玩法</h1>
+
+          <p>发挥你的脑洞，这是创作</p>
+
+          <p><a class="btn btn-lg btn-primary" href="/users" target="_blank"
+                role="button">点我新建笔记</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="carousel-inner-part4">
+      <img src="/images/part4-big.PNG" alt="4 slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>难得知己</h1>
+
+          <p>精彩不独享，知遇佳音共品好文章</p>
+
+          <p><a class="btn btn-lg btn-primary" href="/users" target="_blank"
+                role="button">点我新建笔记</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="carousel-inner-part5">
+      <img src="/images/part5-big.jpg" alt="5 slide">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>我疯了吧</h1>
+
+          <p>不去实现核心功能在这儿搞这个。。。。。。</p>
+
+          <p><a class="btn btn-lg btn-primary" href="/users" target="_blank"
+                role="button">点我新建笔记</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+<section id="feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <h2>Swell丶旖旎F 云笔记</h2>
+        <p>记录，成为更好的自己</p>
+        <p>随时随地，整理分享</p>
+        <p>团队资料，实时协作（未实现）</p>
+        <a href="//users" class="btn btn-view-works">View Works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+  <!-- 简述 -->
+  <div class="row" id="summary-container">
+    <div class="col-md-4">
+      <img class="img-circle" src="/images/用户.png" alt="chrome">
+
+      <h2 id="counter1"></h2>
+      <p>用户已加入我们，偏偏还想要个你</p>
+
+      <p><a class="btn btn-default" href="#" role="button">点我登录注册</a></p>
+    </div>
+    <div class="col-md-4">
+      <img class="img-circle" src="/images/笔记.png" alt="firefox">
+
+      <h2 id="counter2">34546.42</h2>
+
+      <p>笔记已建立，你不来试试嘛</p>
+
+      <p><a class="btn btn-default" href="#" role="button">点我新建笔记</a></p>
+    </div>
+    <div class="col-md-4">
+      <img class="img-circle" src="/images/足迹.png" alt="safari">
+
+      <h2 id="counter3"></h2>
+
+      <p>网站访问量</p>
+
+      <p><a class="btn btn-default" href="#" role="button">点我新建笔记</a></p>
+    </div>
+  </div>
+
+
+  <!-- 关于 -->
+  <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+       aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span
+                    aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+          <h4 class="modal-title" id="modal-label">关于</h4>
+        </div>
+        <div class="modal-body">
+          <p>自己做着瞎玩，根本不知道在这儿写什么</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+    <p>&copy; yinywf </p>
+  </footer>
+
+</div>
+
+<script src="/jquery/dist/jquery.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/countUp.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+       /* $('#ad-carousel').carousel();*/
+        $('#menu-nav').find('.navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            var _this = this;
+            var index = href.index('#')
+            if ('#' !== href&&index===0) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+//                if (tabId) {
+//                    _this.attr("target","_blank");
+//                    $("#feature-tab").find("a[href='#" + tabId + "']").tab('show');
+//                }
+            }
+        });
+
+    });
+    $('#feature').waypoint(function () {
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+        };
+
+        var counter1 = new CountUp('counter1', 0, 4114, 0, 2.5, options);
+        console.log("demo",counter1)
+        if (!counter1.error) {
+            counter1.start();
+        } else {
+            console.error(counter1.error);
+        }
+        var counter2 = new CountUp('counter2', 0, 18542, 0, 2.5, options);
+        console.log("demo",counter2)
+        if (!counter2.error) {
+            counter2.start();
+        } else {
+            console.error(counter2.error);
+        }
+        var counter3 = new CountUp('counter3', 0, 4114, 0, 2.5, options);
+        console.log("demo",counter3)
+        if (!counter3.error) {
+            counter3.start();
+        } else {
+            console.error(counter3.error);
+        }
+    });
+
+
+</script>
+</body>
+</html>

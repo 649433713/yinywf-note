@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head -->
+<head>
+
+	<title>注册登录</title>
+
+	<!-- Meta-Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //Meta-Tags -->
+
+	<!-- Style -->
+	<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/sign-style.css" type="text/css" media="all">
+
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+	<h1>旖旎丶F</h1>
+
+
+	<div class="container">
+		<ul class="nav nav-tabs" role="tablist" id="feature-tab">
+			<li class="active"><a href="#login" role="tab" data-toggle="tab"><h2>登 录</h2></a></li>
+			<li><a href="#register" role="tab" data-toggle="tab">	<h2>注 册</h2></a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="login tab-pane active" id="login">
+
+				<form action="#" method="post">
+					<input type="text" Name="Userame" placeholder="用户名" required="">
+					<input type="password" Name="Password" placeholder="密码" required="">
+				</form>
+				<ul class="tick">
+					<li>
+						<input type="checkbox" id="brand1" value="">
+						<label for="brand1"><span></span>记住我</label>
+					</li>
+				</ul>
+				<div class="send-button">
+					<form>
+						<input type="submit" value="登 录">
+					</form>
+				</div>
+				<a href="#">忘记密码?</a>
+				<div class="social-icons">
+					<p>- 其他方式登录 -</p>
+					<ul>
+						<li class="qq"><a href="#">
+						<span class="icons"></span>
+						<span class="text">QQ</span></a></li>
+						<li class="weixin"><a href="#">
+						<span class="icons"></span>
+						<span class="text">微信</span></a></li>
+						<li class="weibo"><a href="#">
+						<span class="icons"></span>
+						<span class="text">微博</span></a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<!--<div class="clear"></div>-->
+			</div>
+
+			<div class="register tab-pane" id="register">
+
+				<form action="http://localhost:3000/users/register" method="post">
+					<input type="text" Name="Name" placeholder="用户名" required="">
+					<input type="text" Name="Email" placeholder="邮箱" required="">
+					<input type="password" Name="Password" placeholder="密码" required="">
+					<input type="text" Name="Phone Number" placeholder="手机号码" required="">
+
+				<div class="send-button">
+					<input type="submit" value="免费注册" >
+				</div>
+				</form>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+	</div>
+
+
+	<div class="footer">
+		<p>Copyright &copy; yinywf - QQ:649433713</p>
+	</div>
+	<script src="../node_modules/jquery/dist/jquery.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+<!-- //Body -->
+
+</html>
